@@ -92,6 +92,7 @@ function checkValue(element) {
 }
 function startOver() {
   // display success message
+  document.querySelector('.message').classList.remove("hidden");
   document.querySelector('.message').innerHTML = 'Your RSVP has been submitted!';
   // reset form
   document.getElementById('rsvpForm').reset();
@@ -103,6 +104,7 @@ function startOver() {
   add();
   // remove success message
   setTimeout(function () {
+    document.querySelector('.message').classList.add("hidden");
     document.querySelector('.message').innerHTML = '';
   }, 3000);
 }
