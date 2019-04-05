@@ -139,7 +139,6 @@ input[type="submit"]:disabled {
   background-color: #19a974;
   color: #f1f1f1;
   border-color: 1px solid #137752;
-  color: #333;
   padding: .75em 1em;
   margin-bottom: 1.5em;
 }
