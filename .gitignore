@@ -1,2 +1,3 @@
 node_modules/
+includes/*.html
 .DS_Store

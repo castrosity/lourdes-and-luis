@@ -1,61 +1,32 @@
-<!DOCTYPE html>
-<html lang="en" class="h-100">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo">
-  <link rel="stylesheet" href="/assets/css/site.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <title>Lourdes 💑 Luis</title>
-</head>
-
-<body class="black flex flex-column h-100 sans-serif">
-  <div class="content">
-    <div class="carousel">
-      <!-- TODO -->
+<!doctype html>
+<html class="h-100" lang="en">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="//unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="/assets/css/site.css"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+  <title>Lourdes 💑 Luis - Home</title>
+  <body class="black flex flex-column h-100 serif">
+    <div class="content">
+      <header class="bg-near-black flex h3 items-center relative">
+        <h1 class="mh4 mv0 tc tl-l w-100 w-auto-l"><a class="dim f4 link gray" href="/">Lourdes 💑 Luis</a></h1>
+        <nav class="db-l dn ml-auto-l relative w-auto-l"><a class="dim f5 link gray mr3" href="/" title="Home">Home<a class="dim f5 link mr3 gray" href="/couple/" title="Couple">Couple</a><a class="dim f5 link mr3 gray" href="/story/" title="Story">Story</a><a class="dim f5 link mr3 gray" href="/ceremony/" title="Ceremony">Ceremony</a><a class="dim f5 link mr3 gray" href="/entourage/" title="Entourage">Entourage</a><a class="dim f5 link mr3 gray" href="/gallery/" title="Gallery">Gallery</a><a class="dim f5 link mr3 gray" href="/faqs/" title="FAQs">FAQs</a></a></nav><a class="absolute btn-mobile db dn-l gray" href="#"><i class="fas fa-bars"></i></a>
+      </header>
     </div>
-    <header>
-      <nav class="pa3 pa4-ns ta">
-        <a class="link dim black b f4 tc db mb3 mb4-ns" href="/" title="Home">Lourdes 💑 Luis</a>
-        <div class="tc pb3">
-          <a class="link dim gray f6 f5-ns dib mr3" href="/" title="Home">Home</a>
-          <a class="link dim gray f6 f5-ns dib mr3" href="/couple/" title="Couple">Couple</a>
-          <a class="link dim gray f6 f5-ns dib mr3" href="/story/" title="Story">Story</a>
-          <a class="link dim gray f6 f5-ns dib mr3" href="/events/" title="Events">Events</a>
-          <a class="link dim gray f6 f5-ns dib mr3" href="/entourage/" title="Entourage">Entourage</a>
-          <a class="link dim gray f6 f5-ns dib mr3" href="/gallery" title="Gallery">Gallery</a>
-          <a class="link dim gray f6 f5-ns dib mr3" href="#" title="RSVP">RSVP</a>
-          <a class="link dim gray f6 f5-ns dib mr3" href="/blog/" title="Blog">Blog</a>
-          <a class="link dim gray f6 f5-ns dib" href="/faqs/" title="Frequently Asked Questions">FAQs</a>
-        </div>
-      </nav>
-    </header>
-  </div>
-  <footer class="b--black-05 black-30 bt f7 flex flex-column h2 justify-center tc">
-    &copy; 2019. Lourdes and Luis. All rights reserved.
-  </footer>
-  <script>
-    const themeColors = ["#daaa00", "#f2c6cf"];
-    const getRandomInt = (max) => {
-      return Math.floor(Math.random() * Math.floor(max));
-    }
-    document.addEventListener("DOMContentLoaded", () => {
-      document.body.style = `background-color: ${themeColors[getRandomInt(themeColors.length)]}`;
-    });
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136397044-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-136397044-1');
-  </script>
-</body>
-
+    <footer class="b--near-white bt f6 gray tc">
+      <p>&copy; 2019 Lourdes &amp; Luis &middot; All rights reserved</p>
+    </footer>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-136397044-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-136397044-1');
+    </script>
+  </body>
 </html>

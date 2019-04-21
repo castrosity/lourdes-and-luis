@@ -1,0 +1,9 @@
+header.bg-near-black.flex.h3.items-center.relative
+  h1.mh4.mv0.tc.tl-l.w-100.w-auto-l
+    a(href="/").dim.f4.link.gray Lourdes 💑 Luis
+  nav.db-l.dn.ml-auto-l.relative.w-auto-l
+    a(href="/", title="Home").dim.f5.link.gray.mr3 Home
+      each nav in ["Couple", "Story", "Ceremony", "Entourage", "Gallery", "FAQs"]
+        a(href='/' + nav.toLowerCase() +'/', title= nav).dim.f5.link.mr3.gray= nav
+  a(href="#").absolute.btn-mobile.db.dn-l.gray
+    i.fas.fa-bars
