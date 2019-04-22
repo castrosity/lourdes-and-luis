@@ -1,9 +1,15 @@
-header.bg-near-black.flex.h3.items-center.relative
-  h1.mh4.mv0.tc.tl-l.w-100.w-auto-l
+header.bg-near-black.flex-l.items-center.pa3.relative.z-1
+  h1.mh4.mv0.tc.tl-l.relative.w-auto.w-40-l.z-max
     a(href="/").dim.f4.link.gray Lourdes 💑 Luis
-  nav.db-l.dn.ml-auto-l.relative.w-auto-l
-    a(href="/", title="Home").dim.f5.link.gray.mr3 Home
-      each nav in ["Couple", "Story", "Ceremony", "Entourage", "Gallery", "FAQs"]
-        a(href='/' + nav.toLowerCase() +'/', title= nav).dim.f5.link.mr3.gray= nav
-  a(href="#").absolute.btn-mobile.db.dn-l.gray
-    i.fas.fa-bars
+  nav.db-l.dn.ml-auto-l.relative.z-2
+    div
+      a(href="/", title="Home").dim.f5.link.gray.mr3 Home
+        each nav in ["Couple", "Story", "Ceremony", "Entourage", "Gallery", "FAQs"]
+          a(href='/' + nav.toLowerCase() +'/', title= nav).dim.f5.link.mr3.gray= nav
+  a#menu-btn(href="#").absolute.bn.dn-l.fa-bars.left-2.link.outline-0.top-42.white.z-3
+  nav#nav-mobile.absolute.bg-black-80.dn.items-center.left-0.min-vh-100.top-0.w-100
+    div.w-100
+      a(href="/", title="Home").db.dim.f3.gray.link.pv3.tc.tracked.ttu.w-100 Home
+        each nav in ["Couple", "Story", "Ceremony", "Entourage", "Gallery", "FAQs"]
+          a(href='/' + nav.toLowerCase() +'/', title= nav).db.dim.f3.gray.link.pv3.tc.tracked.ttu.w-100= nav
+  
